@@ -1,8 +1,8 @@
 {
-    "name": "atlantabot",
-    "version": "4.9.1",
+    "name": "FalconBot",
+    "version": "2.0.0",
     "description": "A very complete Discord bot (more than 70 commands) that uses the Discordjs API!",
-    "main": "atlanta.js",
+    "main": "falcon.js",
     "scripts": {
         "start": "node .",
         "lint": "eslint . --ext .js",
@@ -10,19 +10,19 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Androz2091/AtlantaBot.git"
+        "url": "git+https://github.com/mfaisalghozi/FalconBot.git"
     },
-    "author": "Androz2091",
+    "author": "MfaisalGhozi",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/Androz2091/AtlantaBot/issues"
+        "url": "https://github.com/mfaisalghozi/FalconBot/issues"
     },
-    "homepage": "https://github.com/Androz2091/AtlantaBot#readme",
+    "homepage": "https://github.com/mfaisalghozi/FalconBot#readme",
     "dependencies": {
         "@discordjs/opus": "^0.3.2",
         "@k3rn31p4nic/google-translate-api": "github:k3rn31p4nic/google-translate-api",
         "@sentry/node": "5.29.0",
-        "amethyste-api": "github:Androz2091/amethyste-api",
+        "amethyste-api": "github:mfaisalghozi/amethyste-api",
         "ascii-table": "0.0.9",
         "blague.xyz": "^2.0.4",
         "btoa": "^1.2.1",
