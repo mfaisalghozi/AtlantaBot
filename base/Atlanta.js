@@ -24,7 +24,7 @@ class Atlanta extends Client {
 		this.config = require("../config"); // Load the config file
 		this.customEmojis = require("../emojis.json"); // load the bot's emojis
 		this.languages = require("../languages/language-meta.json"); // Load the bot's languages
-		this.commands = new Collection(); // Creates new commands collection
+		this.commands = new Collection(); // Creates new commands collectionF
 		this.aliases = new Collection(); // Creates new command aliases collection
 		this.logger = require("../helpers/logger"); // Load the logger file
 		this.wait = util.promisify(setTimeout); // client.wait(1000) - Wait 1 second
