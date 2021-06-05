@@ -66,6 +66,7 @@
 		"moderation": "🔑",
 		"music": "🎵",
 		"owner": "⛔",
-		"custom": "🛃"
+		"custom": "🛃",
+		"nsfw": "🔞",
 	}
 }
