@@ -29,10 +29,10 @@ class Atlanta extends Client {
 		this.logger = require("../helpers/logger"); // Load the logger file
 		this.wait = util.promisify(setTimeout); // client.wait(1000) - Wait 1 second
 		this.functions = require("../helpers/functions"); // Load the functions file
-		this.guildsData = require("../base/Guild"); // Guild mongoose model
-		this.usersData = require("../base/User"); // User mongoose model
-		this.membersData = require("../base/Member"); // Member mongoose model
-		this.logs = require("../base/Log"); // Log mongoose model
+		this.guildsData = require("./Guild"); // Guild mongoose model
+		this.usersData = require("./User"); // User mongoose model
+		this.membersData = require("./Member"); // Member mongoose model
+		this.logs = require("./Log"); // Log mongoose model
 		this.dashboard = require("../dashboard/app"); // Dashboard app
 		this.queues = new Collection(); // This collection will be used for the music
 		this.states = {}; // Used for the dashboard

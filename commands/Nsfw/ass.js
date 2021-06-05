@@ -1,12 +1,24 @@
-const Discord = require('discord.js');
-const superagent = require('snekfetch');
+const Command = require("../../base/Command.js"),
+	Discord = require("discord.js"),
+    rp = require('request-promise-native')
+class AssNsfw extends Command {
 
-const rp = require('request-promise-native');
+	constructor (client) {
+		super(client, {
+			name: "ass",
+			dirname: __dirname,
+			enabled: true,
+			guildOnly: true,
+			aliases: ["ass"],
+			memberPermissions: [],
+			botPermissions: [ "SEND_MESSAGES", "EMBED_LINKS" ],
+			nsfw: true,
+			ownerOnly: false,
+			cooldown: 1000
+		});
+	}
 
-module.exports = {
-    name: 'ass',
-    category: 'nsfw',
-    run: async (bot, message, args) => {
+	async run (message) {
         if (!message.channel.nsfw) return message.channel.send('You can use this command in an NSFW Channel!')
 
         return rp.get('http://api.obutts.ru/butts/0/1/random')
@@ -29,5 +41,7 @@ module.exports = {
             message.channel.send(lewdembed);
             message.delete();
         });
-    }
+	}
 }
+
+module.exports = AssNsfw;
